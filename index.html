@@ -5,13 +5,582 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Magazine Clone</title>
+		<link href="reset.css" rel="stylesheet" />
+		<link href="main.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<nav></nav>
-		<header></header>
+		<nav id="main-nav">
+			<div id="small-nav-menu">
+				<img src="./resources/menu.svg" />
+			</div>
+			<div id="nav-logo">
+				<img src="./resources/svgexport-2.svg" alt="tnw logo" />
+			</div>
 
-		<main></main>
+			<ul id="nav-menu">
+				<li>
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">News</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Events</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Programs</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Spaces</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">More</a>
+				</li>
+			</ul>
+			<div id="message-icon">
+				<img src="./resources/svgexport-4.svg" alt="message icon" />
+			</div>
+		</nav>
+		<header id="main-header">
+			<div id="header-big-logo">
+				<img src="resources/svgexport-13.svg" />
+			</div>
+			<div id="slogan">
+				<h1>The heart of tech</h1>
+			</div>
+		</header>
 
-		<footer></footer>
+		<main>
+			<section id="articles-montage">
+				<article class="article-promo big-grid-square">
+					<div>
+						<a href="#"></a>
+						<header class="article-promo-header">
+							<h4 class="categories">Neural</h4>
+							<h2 class="article-promo-title">
+								Understanding Transformers, the machine learning model behind
+								GPT-3
+							</h2>
+						</header>
+					</div>
+				</article>
+				<article class="article-promo">
+					<div>
+						<a href="#"></a>
+						<header class="article-promo-header">
+							<h4 class="categories">Distract</h4>
+							<h2 class="article-promo-title">
+								Not a Rumor: Paradox finally announces Victoria 3 (and a whole
+								lot more)
+							</h2>
+						</header>
+					</div>
+				</article>
+				<article class="article-promo">
+					<div>
+						<a href="#"></a>
+						<header class="article-promo-header">
+							<h4 class="categories">Space</h4>
+							<h2 class="article-promo-title">
+								China landed its Mars rover on the first try - here's what's
+								next
+							</h2>
+						</header>
+					</div>
+				</article>
+				<article class="article-promo big-grid-square">
+					<div>
+						<a href="#"></a>
+						<header class="article-promo-header">
+							<h4 class="categories">Neural</h4>
+							<h2 class="article-promo-title">
+								New supertring theory says blackholes may be portals to other
+								universes
+							</h2>
+						</header>
+					</div>
+				</article>
+				<article class="article-promo">
+					<div id="announcement">
+						<h2>
+							Europe’s leading tech festival is leveling up TNW Conference goes
+							hybrid
+						</h2>
+						<button id="announcement-btn">Learn More</button>
+					</div>
+				</article>
+			</section>
+
+			<section id="popular-articles">
+				<header id="popular-articles-header">
+					<h2>Popular Articles Today</h2>
+				</header>
+				<ol id="pop-articles-list">
+					<li>
+						<a href="#">
+							<span class="pop-articles-number">1</span>
+							<span class="link-articles-title">
+								China landed its Mars rover on the first try - here's what's
+								next
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="pop-articles-number">2</span>
+							<span class="link-articles-title">
+								Google Photos’ unlimited storage is ending on June 1— what can
+								you do about it?
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="pop-articles-number">3</span>
+							<span class="link-articles-title">
+								The PocketGuitar is the way to becoming a guitar god even when
+								you don’t have your guitar
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="pop-articles-number">4</span>
+							<span class="link-articles-title">
+								Scientists: NASA better hurry up and put people on the Moon, bad
+								space weather’s coming
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="pop-articles-number">5</span>
+							<span class="link-articles-title">
+								What would happen if we connected the human brain to a quantum
+								computer?</span
+							>
+						</a>
+					</li>
+				</ol>
+			</section>
+
+			<section id="latest-stories">
+				<header>
+					<h2 class="section-title">Latest stories</h2>
+				</header>
+
+				<ul id="latest-stories-list">
+					<li>
+						<a href="#">
+							<img
+								class="latest-stories-img"
+								src="./resources/1-baby_born.jpeg"
+							/>
+							<p class="link-articles-title">
+								When will first baby be born in space
+							</p>
+							<p class="latest-stories-time">10 minutes ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="latest-stories-img"
+								src="./resources/2-instagram.webp"
+							/>
+							<p class="link-articles-title">
+								Instagram might soon send you 2FA codes via WhatsApp
+							</p>
+							<p class="latest-stories-time">21 minutes ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="latest-stories-img"
+								src="./resources/3-green_hi.jpeg"
+							/>
+							<p class="link-articles-title">
+								Green hydrogen could be the key to our future energy demand
+							</p>
+							<p class="latest-stories-time">2 hours ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="latest-stories-img"
+								src="./resources/4-digital.jpeg"
+							/>
+							<p class="link-articles-title">
+								We're entering the age of 'digital nacionalism' and this will
+								only benefit big tech
+							</p>
+							<p class="latest-stories-time">4 hours ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="latest-stories-img"
+								src="./resources/5-dominos.jpeg"
+							/>
+							<p class="link-articles-title">
+								Domino's 180M order data breach is now a search portal
+							</p>
+							<p class="latest-stories-time">4 hours ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="latest-stories-img"
+								src="./resources/6-how_digital.webp"
+							/>
+							<p class="link-articles-title">
+								How digital nacionalism threatens to entrench Big Tech
+							</p>
+							<p class="latest-stories-time">5 hours ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="latest-stories-img" src="./resources/7-india.jpeg" />
+							<p class="link-articles-title">
+								Why India is asking Twitter and Facebook to remove posts
+								mentioning 'Indian variant'
+							</p>
+							<p class="latest-stories-time">6 hours ago</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="latest-stories-img" src="./resources/8-new.jpeg" />
+							<p class="link-articles-title">
+								Nem experiment: Clocks using more energy are more accurate...
+								'cause thermodynamics
+							</p>
+							<p class="latest-stories-time">22 hours ago</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section id="explore-channels">
+				<header>
+					<h2 class="section-title">Explore our channels!</h2>
+				</header>
+
+				<div>
+					<ul id="channels-list">
+						<li>
+							<a href="#" class="channels" id="plugged">
+								<img src="./resources/channels/plugged.svg" />
+								<p>Your sardonic sorce for consumer tech stories</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="channels" id="neural">
+								<img src="./resources/channels/neural.svg" />
+								<p>Human-centric AI news and analysis</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="channels" id="shift">
+								<img src="./resources/channels/shift.svg" />
+								<p>Driving the future of sustainable mobility</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="channels" id="growth">
+								<img src="./resources/channels/growth-quarters.svg" />
+								<p>No-nonsense perspectives on startup growth</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="channels" id="hard">
+								<img src="./resources/channels/hardfork.svg" />
+								<p>Inside money, markets and Big Tech</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="newsletter">
+				<div id="newsletter-container">
+					<header>
+						<h2 class="section-title">Get the snarkiest newsletter in tech</h2>
+					</header>
+					<p>
+						Subscribe to our twice-weekly <a href="#">Big Spam</a> or check out
+						our <a href="#">other newsletters.</a>
+					</p>
+					<div id="newsletter-input">
+						<img src="./resources/newsletter/svgexport-15.svg" />
+						<input type="email" placeholder="Email" />
+						<button type="submit">subscribe</button>
+					</div>
+
+					<ul id="media-icon-list">
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-16.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-17.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-18.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-19.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-20.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-21.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-22.svg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="video-section">
+				<header>
+					<h2 class="section-title">Watch what we made you</h2>
+				</header>
+				<div id="videos">
+					<div id="video-container">
+						<iframe
+							width="968"
+							height="545"
+							src="https://www.youtube.com/embed/UAu4d0K99Vc"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<aside>
+						<ul id="video-suggestions-list">
+							<li class="video-suggestion-card">
+								<a href="#">
+									<img src="resources/video/hqdefault.jpg" />
+									<p class="link-articles-title">
+										Sonos Roam review: Smart speaker, smarter bussiness
+									</p>
+								</a>
+							</li>
+							<li class="video-suggestion-card">
+								<a href="#">
+									<img src="resources/video/2video.jpg" />
+									<p class="link-articles-title">
+										Learning guitar is better than meditation
+									</p>
+								</a>
+							</li>
+							<li class="video-suggestion-card">
+								<a href="#">
+									<img src="resources/video/3video.jpg" />
+									<p class="link-articles-title">
+										why your hi-fi setup needs these headphones
+									</p>
+								</a>
+							</li>
+							<li class="video-suggestion-card">
+								<a href="#">
+									<img src="resources/video/4video.jpg" />
+									<p class="link-articles-title">
+										CDs: Forgotten, but still amazing
+									</p>
+								</a>
+							</li>
+							<li class="video-suggestion-card">
+								<a href="#">
+									<img src="resources/video/5video.jpg" />
+									<p class="link-articles-title">
+										The iPhone 11 Pro range: A retrospective on Apple's best
+										value phone
+									</p>
+								</a>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</section>
+
+			<section id="work-with-us">
+				<h3 class="subtitle">Reach your goals</h3>
+				<div id="work-wraper">
+					<div id="work-text">
+						<header>
+							<h2 class="section-title">Work with us</h2>
+						</header>
+						<p>
+							TNW takes center stage in the tech industry, offering creative
+							media campaigns, sizzling tech events, bespoke innovation
+							programs, and prime office locations in Amsterdam. Want to engage
+							your audience more effectively, innovate your business, and
+							position your brand in front of a digital-savvy audience?
+						</p>
+						<button>Get in touch</button>
+					</div>
+					<div id="work-grid">
+						<div class="work-card">
+							<img src="./resources/work/media.svg" />
+							<p>Media</p>
+						</div>
+						<div class="work-card">
+							<img src="./resources/work/events.svg" />
+							<p>Events</p>
+						</div>
+						<div class="work-card">
+							<img src="./resources/work/spaces.svg" />
+							<p>Spaces</p>
+						</div>
+						<div class="work-card">
+							<img src="./resources/work/events.svg" />
+							<p>Events</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div id="footer-flex-container">
+				<div id="logo">
+					<div>
+						<div id="footer-logo">
+							<img src="resources/white-logo.svg" />
+						</div>
+						<div id="slogan">
+							<h1>The heart of tech</h1>
+						</div>
+					</div>
+
+					<ul id="media-icon-list">
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-16.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-17.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-18.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-19.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-20.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-21.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./resources/newsletter/svgexport-22.svg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="lists">
+					<div id="more">
+						<h3>More TNW</h3>
+						<ul class="footer-list">
+							<li>
+								<a href="#">Media</a>
+							</li>
+							<li>
+								<a href="#">Events</a>
+							</li>
+							<li>
+								<a href="#">Programs</a>
+							</li>
+							<li>
+								<a href="#">Spaces</a>
+							</li>
+							<li>
+								<a href="#">Newsletter</a>
+							</li>
+						</ul>
+					</div>
+
+					<div id="about">
+						<h3>About TNW</h3>
+						<ul class="footer-list">
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							<li>
+								<a href="#">Partner with us</a>
+							</li>
+							<li>
+								<a href="#">Advertise</a>
+							</li>
+							<li>
+								<a href="#">Jobs</a>
+							</li>
+							<li>
+								<a href="#">Terms & Conditions</a>
+							</li>
+
+							<li>
+								<a href="#">Cookie Statement</a>
+							</li>
+							<li>
+								<a href="#">Privacy Statement</a>
+							</li>
+							<li>
+								<a href="#">Editorial Policy</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div id="copyright">
+				<p>TNW is a Financial Times company.</p>
+				<p>
+					Copyright © 2006—2021, The Next Web B.V. Made with &lt3 in Amsterdam.
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>
