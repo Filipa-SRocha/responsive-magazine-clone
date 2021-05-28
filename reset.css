@@ -135,3 +135,7 @@ a {
 h2 {
 	margin-block-start: 0;
 }
+
+* {
+	box-sizing: border-box;
+}
