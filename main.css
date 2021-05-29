@@ -241,6 +241,23 @@ section {
 	}
 }
 
+@media (max-width: 800px) {
+	#articles-montage {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.article-promo {
+		width: 80vw;
+		height: 50vh;
+	}
+	.article-promo-title {
+		font-size: 20px;
+	}
+}
+
 /*---------Popular Articles Lisr----------*/
 #popular-articles {
 	min-height: 300px;
