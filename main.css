@@ -343,12 +343,15 @@ section {
 		margin-left: -25%;
 	}
 	.latest-img-text {
-		width: 40%;
+		width: 50%;
 		padding: 0 5px;
 	}
+	.latest-img-text p {
+		width: 100%;
+	}
 	.img-crop {
-		width: 150px;
-		height: 150px;
+		width: 120px;
+		height: 120px;
 		overflow: hidden;
 		position: relative;
 		border-radius: 50%;
