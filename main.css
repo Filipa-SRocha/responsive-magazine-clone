@@ -331,6 +331,7 @@ section {
 	}
 	#latest-stories a {
 		display: flex;
+		flex: 1 1;
 		width: 100%;
 		flex: 1 1;
 		align-items: center;
@@ -343,6 +344,7 @@ section {
 	}
 	.latest-img-text {
 		width: 40%;
+		padding: 0 5px;
 	}
 	.img-crop {
 		width: 150px;
