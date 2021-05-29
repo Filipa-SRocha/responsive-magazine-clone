@@ -324,10 +324,32 @@ section {
 @media (max-width: 800px) {
 	#latest-stories-list {
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 	#latest-stories h2 {
 		text-align: center;
+	}
+	#latest-stories a {
+		display: flex;
+		width: 100%;
+		flex: 1 1;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#latest-stories img {
+		height: 100%;
+		margin-left: -25%;
+	}
+	.latest-img-text {
+		width: 40%;
+	}
+	.img-crop {
+		width: 150px;
+		height: 150px;
+		overflow: hidden;
+		position: relative;
+		border-radius: 50%;
 	}
 }
 /*--------- channels---------*/
