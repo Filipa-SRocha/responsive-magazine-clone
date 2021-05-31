@@ -16,7 +16,35 @@
 	<body>
 		<nav id="main-nav" class="flex-space-between">
 			<div id="small-nav-menu">
-				<img src="./resources/menu.svg" />
+				<button id="small-menu-button">
+					<img src="./resources/menu.svg" />
+				</button>
+
+				<div id="hamburguer-menu" class="hamburguer-menu-hide">
+					<ul id="full-nav" class="flex-col-center-around">
+						<li>
+							<a href="#" class="full-nav-link">Home</a>
+						</li>
+						<li>
+							<a href="#" class="full-nav-link">News</a>
+						</li>
+						<li>
+							<a href="#" class="full-nav-link">Events</a>
+						</li>
+						<li>
+							<a href="#" class="full-nav-link">Programs</a>
+						</li>
+						<li>
+							<a href="#" class="full-nav-link">Spaces</a>
+						</li>
+						<li>
+							<a href="#" class="full-nav-link">More</a>
+						</li>
+						<li>
+							<button id="close-menu">X</button>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div id="nav-logo">
 				<img src="./resources/svgexport-2.svg" alt="tnw logo" />
@@ -625,4 +653,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="main.js"></script>
 </html>
