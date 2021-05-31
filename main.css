@@ -118,6 +118,10 @@ section {
 		display: block;
 		margin: 5px;
 	}
+	#small-menu-button {
+		background: transparent;
+		border: none;
+	}
 
 	.hamburguer-menu-display {
 		display: block;
